@@ -1,4 +1,4 @@
-name: Azure Deployment Workflow
+name: Azure Deployment WorkflowS
 
 on:
   push:
