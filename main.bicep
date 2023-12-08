@@ -50,9 +50,10 @@ module webApp './ResourceModules-main/modules/web/site/main.bicep' = {
     }
     appSettingsKeyValuePairs: {
       WEBSITES_ENABLE_APP_SERVICE_STORAGE: false
-      DOCKER_REGISTRY_SERVER_URL: kathe.azurecr.io
-      DOCKER_REGISTRY_SERVER_USERNAME: kathe
-      DOCKER_REGISTRY_SERVER_PASSWORD: hTOiFAA2wJuBH3W7o2KwIZ8Fff+4YZsBm9xjam6hQ8+ACRCRTAIp
+      DOCKER_REGISTRY_SERVER_URL: 'https://kathe.azurecr.io'
+      DOCKER_REGISTRY_SERVER_USERNAME: 'kathe'
+      DOCKER_REGISTRY_SERVER_PASSWORD: 'hTOiFAA2wJuBH3W7o2KwIZ8Fff+4YZsBm9xjam6hQ8+ACRCRTAIp'
+
     }
   }
 }
