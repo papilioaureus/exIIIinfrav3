@@ -20,14 +20,5 @@
     },
     "location": {
       "value": "Australia Central"
-    },
-    "DOCKER_REGISTRY_SERVER_URL": {
-      "value": "kathe.azurecr.io"
-    },
-    "DOCKER_REGISTRY_SERVER_USERNAME": {
-      "value": "kathe" 
-    },
-    "DOCKER_REGISTRY_SERVER_PASSWORD": {
-      "value": "hTOiFAA2wJuBH3W7o2KwIZ8Fff+4YZsBm9xjam6hQ8+ACRCRTAIp"
-  }
+    }
 }
