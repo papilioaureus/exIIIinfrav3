@@ -1,7 +1,6 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
-
   "parameters": {
     "containerRegistryName": {
       "value": "katheContainers"
@@ -20,9 +19,15 @@
     },
     "location": {
       "value": "Australia Central"
+    },
+    "DOCKER_REGISTRY_SERVER_URL": {
+      "value": "<DOCKER_REGISTRY_SERVER_URL_VALUE>"
+    },
+    "DOCKER_REGISTRY_SERVER_USERNAME": {
+      "value": "<DOCKER_REGISTRY_SERVER_USERNAME_VALUE>"
+    },
+    "DOCKER_REGISTRY_SERVER_PASSWORD": {
+      "value": "<DOCKER_REGISTRY_SERVER_PASSWORD_VALUE>"
     }
-
-
-}
-
+  }
 }
