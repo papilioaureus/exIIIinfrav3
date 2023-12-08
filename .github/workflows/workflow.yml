@@ -17,11 +17,6 @@ jobs:
     steps:
       # Checkout code
       - uses: actions/checkout@main
-
-      # Lint Bicep code
-      - name: Run Bicep linter
-        run: az bicep build --file ./key-vault.bicep
-
       # Lint Bicep code
       - name: Run Bicep linter
         run: az bicep build --file ./main.bicep
