@@ -6,7 +6,6 @@ param webAppName string
 param appServicePlanName string
 param containerRegistryImageName string
 param containerRegistryImageVersion string
-
 param DOCKER_REGISTRY_SERVER_URL string
 param DOCKER_REGISTRY_SERVER_USERNAME string
 @secure()
@@ -50,9 +49,9 @@ module webApp './ResourceModules-main/modules/web/site/main.bicep' = {
     }
     appSettingsKeyValuePairs: {
       WEBSITES_ENABLE_APP_SERVICE_STORAGE: false
-      DOCKER_REGISTRY_SERVER_URL: 'https://kathe.azurecr.io'
-      DOCKER_REGISTRY_SERVER_USERNAME: 'kathe'
-      DOCKER_REGISTRY_SERVER_PASSWORD: 'hTOiFAA2wJuBH3W7o2KwIZ8Fff+4YZsBm9xjam6hQ8+ACRCRTAIp'
+      DOCKER_REGISTRY_SERVER_URL: {{ secrets.DOCKER_REGISTRY_SERVER_URL }}
+      DOCKER_REGISTRY_SERVER_USERNAME: {{ secrets.DOCKER_REGISTRY_SERVER_USERNAME }}
+      DOCKER_REGISTRY_SERVER_PASSWORD: {{ secrets.DOCKER_REGISTRY_SERVER_PASSWORD }}
 
     }
   }
