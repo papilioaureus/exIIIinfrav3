@@ -47,12 +47,14 @@ module webApp './ResourceModules-main/modules/web/site/main.bicep' = {
       linuxFxVersion: 'DOCKER|${containerRegistryName}.azurecr.io/${containerRegistryImageName}:${containerRegistryImageVersion}'
       appCommandLine: ''
     }
+    
     appSettingsKeyValuePairs: {
       WEBSITES_ENABLE_APP_SERVICE_STORAGE: false
-      DOCKER_REGISTRY_SERVER_URL: {{ secrets.DOCKER_REGISTRY_SERVER_URL }}
-      DOCKER_REGISTRY_SERVER_USERNAME: {{ secrets.DOCKER_REGISTRY_SERVER_USERNAME }}
-      DOCKER_REGISTRY_SERVER_PASSWORD: {{ secrets.DOCKER_REGISTRY_SERVER_PASSWORD }}
+      DOCKER_REGISTRY_SERVER_URL: 'https://kathecontainers.azurecr.io'
+      DOCKER_REGISTRY_SERVER_USERNAME: 'katheContainers'
+      DOCKER_REGISTRY_SERVER_PASSWORD: 'qX9tNpFyGYUpY2N6NBcC2rILDsXLp71yBq42vj0yvP+ACRC8ExgU'
 
     }
   }
 }
+
