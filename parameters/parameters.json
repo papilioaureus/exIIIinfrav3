@@ -9,7 +9,7 @@
       "value": "katheASP"
     },
     "webAppName": {
-      "value": "katheAS"
+      "value": "katheWebApp"
     },
     "containerRegistryImageName": {
       "value": "myapp"
