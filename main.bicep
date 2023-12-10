@@ -52,7 +52,7 @@ module webApp './ResourceModules-main/modules/web/site/main.bicep' = {
       WEBSITES_ENABLE_APP_SERVICE_STORAGE: false
       DOCKER_REGISTRY_SERVER_URL: 'https://kathecontainers.azurecr.io'
       DOCKER_REGISTRY_SERVER_USERNAME: 'katheContainers'
-      DOCKER_REGISTRY_SERVER_PASSWORD: 'qX9tNpFyGYUpY2N6NBcC2rILDsXLp71yBq42vj0yvP+ACRC8ExgU'
+      DOCKER_REGISTRY_SERVER_PASSWORD: DOCKER_REGISTRY_SERVER_PASSWORD
 
     }
   }
