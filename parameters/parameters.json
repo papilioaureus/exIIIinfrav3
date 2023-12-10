@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "containerRegistryName": {
-      "value": "katheContainers"
+      "value": "kathecontainers"
     },
     "appServicePlanName": {
       "value": "katheASP"

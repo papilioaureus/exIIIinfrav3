@@ -51,7 +51,7 @@ module webApp './ResourceModules-main/modules/web/site/main.bicep' = {
     appSettingsKeyValuePairs: {
       WEBSITES_ENABLE_APP_SERVICE_STORAGE: false
       DOCKER_REGISTRY_SERVER_URL: 'https://kathecontainers.azurecr.io'
-      DOCKER_REGISTRY_SERVER_USERNAME: 'katheContainers'
+      DOCKER_REGISTRY_SERVER_USERNAME: 'kathecontainers'
       DOCKER_REGISTRY_SERVER_PASSWORD: DOCKER_REGISTRY_SERVER_PASSWORD
 
     }
